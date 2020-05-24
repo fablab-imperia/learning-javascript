@@ -21,4 +21,6 @@ bottone.addEventListener("click", function() {
   li.innerText = testo;
 
   lista.appendChild(li);
+  let casella = document.querySelector("#todolist");
+  casella.value = "";
 });

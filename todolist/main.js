@@ -18,8 +18,12 @@ bottone.addEventListener("click", function() {
   let lista = document.querySelector("#lista");
 
   let li = document.createElement("li");
-  li.innerText = testo;
-
+  let label = document.createElement("label");
+  let checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  label.innerText = testo;
+  li.appendChild(checkbox);
+  li.appendChild(label);
   lista.appendChild(li);
   let casella = document.querySelector("#todolist");
   casella.value = "";

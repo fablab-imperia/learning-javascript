@@ -1,7 +1,7 @@
 let caselladitesto = document.querySelector("#todolist");
-caselladitesto.addEventListener("keydown", function(){
+caselladitesto.addEventListener("keyup", function(){
     let testo = document.querySelector("#todolist").value;
-    if (testo===""){
+    if (testo.trim()===""){
         const btn = document.getElementById("inserisci");
         btn.disabled=true;
     }

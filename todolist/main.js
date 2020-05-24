@@ -1,10 +1,15 @@
 document.querySelector("#inserisci").disabled = true;
 
+
 let todoList = JSON.parse(localStorage.getItem('todoList'));
 
+if (todoList === null){
+  todoList = [];
+}
 for (let el of todoList){
   createListItem(el);
 }
+
 
 let caselladitesto = document.querySelector("#todolist");
 caselladitesto.addEventListener("keyup", function() {
@@ -28,6 +33,7 @@ bottone.addEventListener("click", function() {
   localStorage.setItem('todoList', JSON.stringify(todoList));
   let casella = document.querySelector("#todolist");
   casella.value = "";
+  document.querySelector("#inserisci").disabled = true;
 });
 
 

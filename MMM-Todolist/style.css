@@ -1,0 +1,11 @@
+ .colorerosso {
+            color:crimson;
+        }
+        h1 {
+            color: blue;
+        }
+    ul#lista {
+        font-size: 15pt; 
+        font-weight: bold;
+       /* text-decoration: underline; */  
+    }
